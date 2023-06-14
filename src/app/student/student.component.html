@@ -1,0 +1,23 @@
+<p>student works!</p>
+<div>
+   <a [routerLink]="['/studentaddapi']">Student ADD API</a>
+   
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+           <th>ID</th> 
+           <th>Name</th> 
+           <th>Semester</th> 
+           <th>Hobby</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of students">
+            <td>{{item.id}}</td>
+            <td>{{item.sName}}</td>
+            <td>{{item.semester}}</td>
+            <td>{{item.hobby}}</td>
+        </tr>
+    </tbody>    
+</table>
